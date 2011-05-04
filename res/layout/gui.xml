@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/main_view" 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<app.truck.TruckRC.TruckView 
+	android:id="@+id/table" 
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="*">
+    <TableRow android:id="@+id/toprow"
+    	android:layout_height="fill_parent">
+    	<app.truck.TruckRC.TruckListView 
+    		android:id="@+id/text"
+    		android:layout_span="3"
+    		android:layout_height="fill_parent" />
+    </TableRow>
+	<TableRow android:id="@+id/centerrow"
+			android:gravity="bottom"
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		<Button android:text="@string/buttonQuit" 
+			android:id="@+id/buttonQuit" 
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+		<Button android:text="@string/buttonUp" 
+			android:id="@+id/buttonUp"  
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+		<Button android:text="@string/buttonConnect" 
+			android:id="@+id/buttonConnect"  
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+
+	</TableRow>
+	<TableRow android:id="@+id/bottomrow"
+			android:gravity="bottom"
+			android:layout_height="wrap_content">
+		<Button android:text="@string/buttonLeft" 
+			android:id="@+id/buttonLeft"  
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+		<Button android:text="@string/buttonDown" 
+			android:id="@+id/buttonDown"  
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+		<Button android:text="@string/buttonRight" 
+			android:id="@+id/buttonRight"  
+			android:layout_height="wrap_content"
+			android:onClick="onButtonClick">
+		</Button>
+	</TableRow>
+</app.truck.TruckRC.TruckView>
+</LinearLayout>
